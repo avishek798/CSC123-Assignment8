@@ -35,13 +35,13 @@ public class HTTPHook extends CurrencyManager {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 		String currencies = "", line = null;
 		while ((line = reader.readLine()) != null) {
-			String strDigits = line.replaceAll("\\D", "");
-			String strCode = strDigits.charAt(2) + "" + strDigits.charAt(3) + "" + strDigits.charAt(4);
-			int code = Integer.parseInt(strCode);
-			if (code != 200) {
-				throw new IOException("** Currency could not be loaded, "
-						+ "Currency Conversion Service and Foreign Currency accounts are not available **%n");
-			}
+//			String strDigits = line.replaceAll("\\D", "");
+//			String strCode = strDigits.charAt(2) + "" + strDigits.charAt(3) + "" + strDigits.charAt(4);
+//			int code = Integer.parseInt(strCode);
+//			if (code != 200) {
+//				throw new IOException("** Currency could not be loaded, "
+//						+ "Currency Conversion Service and Foreign Currency accounts are not available **%n");
+//			}
 			if (line.isBlank()) {
 				while ((line = reader.readLine()) != null) {
 					currencies = currencies + line + "\n";

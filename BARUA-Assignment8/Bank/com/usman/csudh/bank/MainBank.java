@@ -11,7 +11,7 @@ import com.usman.csudh.bank.core.NoSuchAccountException;
 import com.usman.csudh.bank.core.CurrencyConversionException;
 import com.usman.csudh.util.UIManager;
 
-public class MainBank {
+public class MainBank extends Thread {
 
 	// All messages are declared as constants to make it easier to change. Also, to
 	// ensure future proofing in case the application need to be made available
